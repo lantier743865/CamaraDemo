@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    tools:context=".MainActivity">
+
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.example.camarademo.custom.CamaraPreview
+            android:id="@+id/cametaview_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.example.camarademo.custom.TipView
+            android:id="@+id/tipview_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="64dp"
+            android:src="@mipmap/ic_take_back"/>
+
+
+        <RelativeLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="56dp"
+            >
+            <ImageView
+                android:id="@+id/bt_take_photo"
+                android:layout_centerInParent="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/ic_take_ok"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15度"/>
+
+        <Button
+            android:id="@+id/bt_setwidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宽度"/>
+
+        <Button
+            android:id="@+id/bt_setstartpoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起点"/>
+
+        <Button
+            android:id="@+id/bt_changetheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="改主题"/>
+        <Button
+            android:id="@+id/bt_yellow_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示黄线"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

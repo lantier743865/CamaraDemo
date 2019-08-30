@@ -17,6 +17,10 @@ import com.mm.mediasdk.MoMediaManager;
 
 import java.io.File;
 
+/**
+ *  
+ */
+
 public class TakaPhotoActivity extends AppCompatActivity {
     private static final String TAG = "TakaPhotoActivity";
     private IMultiRecorder recorder;
